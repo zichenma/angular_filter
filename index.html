@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tokenizer Filter</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="angular.js"></script>
+    <script src="controller.js"></script>
+    <script src="filter.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="TokenizeControler">
+        <p>Input: <input ng-model="greeting" /></p>
+        <p>Delimiter: <input ng-model="delimiter" /></p>
+        <p>{{greeting | tokenize:defualt}}</p>
+        <p>{{greeting | tokenize:false:delimiter}}</p>
+        <span></span><a href="https://github.com/zichenma/angular_filter.git" target="_blank">Source Code</a></span>
+    </div>
+</body>
+</html>
+
+
